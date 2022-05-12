@@ -169,7 +169,7 @@ require_once 'nav.php';
 	<?php
 	 if (empty($patrolcarArray))
 	 {
-		 echo "";
+		 echo "No Available Patrol Cars";
 	 }
 	 else
 	 {
