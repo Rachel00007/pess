@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 11, 2022 at 08:58 AM
+-- Generation Time: May 12, 2022 at 07:40 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.8
 
@@ -47,7 +47,10 @@ INSERT INTO `dispatch` (`incident_id`, `patrolcar_id`, `time_dispatched`, `time_
 (13, 'QX2222G', '2022-03-02 04:37:20', '2022-03-02 04:37:20', '2022-03-02 04:37:20'),
 (14, 'QX4321R', '2022-05-10 19:55:45', NULL, NULL),
 (14, 'QX4444P', '2022-03-02 04:37:20', '2022-03-02 04:37:20', '2022-03-02 04:37:20'),
-(15, 'QX1234', '2022-03-10 13:46:00', NULL, '2022-05-10 23:33:32');
+(15, 'QX1234', '2022-03-10 13:46:00', NULL, '2022-05-10 23:33:32'),
+(16, 'QX1234', '2022-05-11 22:20:02', NULL, '2022-05-11 22:22:09'),
+(17, 'QX1234', '2022-05-11 22:22:24', NULL, '2022-05-11 22:39:58'),
+(18, 'QX1234', '2022-05-11 22:40:07', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -78,7 +81,11 @@ INSERT INTO `incident` (`incident_id`, `caller_name`, `phone_number`, `incident_
 (11, 'Rachel', '11112222', '010', 'cck street 52', '<br />\r\n<b>Warning</b>:  Undefined variable $_Post in <b>C:xampphtdocspessdispatch.php</b> on line <', '2', '2022-05-10 19:44:46'),
 (12, 'Rachel', '11112222', '010', 'cck street 52', '<br />\r\n<b>Warning</b>:  Undefined variable $_Post in <b>C:xampphtdocspessdispatch.php</b> on line <', '2', '2022-05-10 19:50:37'),
 (13, 'Rachel', '11112222', '010', 'cck street 52', '<br />\r\n<b>Warning</b>:  Undefined variable $_Post in <b>C:xampphtdocspessdispatch.php</b> on line <', '2', '2022-05-10 19:51:40'),
-(14, 'Marcus', '12345789', '060', 'Bedok street 27 ', '<br />\r\n<b>Warning</b>:  Undefined variable $_Post in <b>C:xampphtdocspessdispatch.php</b> on line <', '2', '2022-05-10 19:55:45');
+(14, 'Marcus', '12345789', '060', 'Bedok street 27 ', '<br />\r\n<b>Warning</b>:  Undefined variable $_Post in <b>C:xampphtdocspessdispatch.php</b> on line <', '2', '2022-05-10 19:55:45'),
+(15, 'Rachel', '12345789', '030', 'nnnn', '<br />\r\n<b>Warning</b>:  Undefined variable $_Post in <b>C:xampphtdocspessdispatch.php</b> on line <', '2', '2022-05-11 22:12:41'),
+(16, 'Rachel', '11112222', '010', 'ihf', 'eeee', '3', '2022-05-11 22:22:09'),
+(17, 'Marcus', '12345789', '010', 'Bedok street 27 ', 'qqqqqqqqqqq', '3', '2022-05-11 22:39:58'),
+(18, 'Rachel', '11112222', '010', 'ihf', 'ww', '2', '2022-05-11 22:40:07');
 
 -- --------------------------------------------------------
 
@@ -142,7 +149,7 @@ CREATE TABLE `patrolcar` (
 --
 
 INSERT INTO `patrolcar` (`patrolcar_id`, `patrolcar_status_id`) VALUES
-('QX1234', '3'),
+('QX1234', '1'),
 ('QX4321R', '1'),
 ('QX4444P', '1'),
 ('QX45545', '1'),
@@ -218,7 +225,7 @@ ALTER TABLE `patrolcar_status`
 -- AUTO_INCREMENT for table `incident`
 --
 ALTER TABLE `incident`
-  MODIFY `incident_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `incident_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -155,7 +155,7 @@ require_once 'nav.php';
 			<?php echo $_POST['incidentDesc']?>
 		</textarea>
 			<input name="incidentDesc" type="hidden"
-			id="incidentDesc" value="<?php echo $_Post['incidentDesc'] ?>">
+			id="incidentDesc" value="<?php echo $_POST['incidentDesc'] ?>">
 		</td>
 	</tr>
 </table>

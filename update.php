@@ -88,7 +88,7 @@ else
 
 <!-- display a form for operator to update status of patrol car -->
 <form name="form2" method="post" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?> ">
-	<table>
+	<table class="ContentStyle">
 	<tr></tr>
 	<tr>
 		<td>ID :</td>
